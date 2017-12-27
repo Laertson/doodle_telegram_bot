@@ -6,7 +6,6 @@ import telegram
 from message_handlers import bot, setup_dispatcher, webhook
 from credentials import TOKEN, APP_URL
 
-
 app = Flask(__name__)
 
 route_for_webhook = '/' + TOKEN
@@ -42,7 +41,6 @@ def del_webhook():
         return "webhook del failed"
 
 
-
 @app.route('/')
 def index():
-    return 'Hey'
+    return 'ok'
